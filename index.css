@@ -10,8 +10,7 @@ body{
     background: #3C3A39;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-        
+    justify-content: space-between;      
 }
 .lefthead{
     width: fit-content;
@@ -30,9 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 62px;
-    margin-right: 24px;
-
-    
+    margin-right: 24px;    
 }
 .menubar{
     width: 20px;
@@ -42,6 +39,58 @@ body{
 }
 .righthead2{
     display: none;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 120px 24px;
+    background: #1C1A19 url('assets/illustration-header-mobile.svg' )bottom right no-repeat;
+    gap: 12px;
+}
+.intro{
+    width: 327px;
+    height: 124px;
+    font-family: 'Crete Round';
+    font-size: 56px;
+    color: #FF6B00;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+}
+.subintro{
+    color: #FFF5E1;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 12px;
+}
+.content{
+    width: 327px;
+    height: 123px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+.socials{
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    gap: 20px;
+    list-style-type: none;
+}
+#design{
+    width: 1003.13px;
+    height: 769.27px;
 }
 @media screen and (min-width: 686px){
     .righthead{
@@ -64,5 +113,38 @@ body{
         font-size: 15px;
         font-family: 'Inter';
     }
-    
+    .body{
+        display: flex;
+        flex-direction: row-reverse;
+        background: #1C1A19 url('assets/backdesign.svg') top right no-repeat ;
+        align-items: center;
+        justify-content: left;
+        padding: 192px 0px;
+        width: 100%;
+        height: 100vh;
+        gap: 89px;    
+    }
+    .subintro{
+        padding-right: 52px;
+    }
+    .socials{
+        flex-direction: column;
+        width: fit-content;
+        padding-left: 17px;
+    }
+    .large{
+        display: flex;
+        flex-direction:  row-reverse;
+        gap: 30px;
+        align-items: stretch;
+        width: fit-content;
+    }
+    .sidebar{
+        margin-bottom: 160px;
+    }
+}
+@media screen and (max-width: 1033px){
+    .body{
+        background: #1C1A19 url('assets/illustration-header-mobile.svg' )bottom right no-repeat;
+    }
 }
