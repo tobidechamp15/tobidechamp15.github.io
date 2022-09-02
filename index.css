@@ -46,8 +46,8 @@ body{
     align-items: flex-start;
     height: 100vh;
     padding: 120px 24px;
+    background: #1C1A19 url('assets/illustration-header-mobile.svg' )bottom right no-repeat;
     gap: 12px;
-    background: #1C1A19;
 }
 .intro{
     width: 327px;
@@ -114,6 +114,7 @@ body{
     .body{
         display: flex;
         flex-direction: row-reverse;
+        background: #1C1A19 url('assets/backdesign.svg') top right no-repeat ;
         align-items: center;
         justify-content: left;
         padding: 192px 0px;
@@ -138,5 +139,10 @@ body{
     }
     .sidebar{
         margin-bottom: 160px;
+    }
+}
+@media screen and (max-width: 1033px){
+    .body{
+        background: #1C1A19 url('assets/illustration-header-mobile.svg' )bottom right no-repeat;
     }
 }
