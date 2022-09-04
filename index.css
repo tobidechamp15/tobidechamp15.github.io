@@ -407,6 +407,7 @@ button:active {
     flex-direction: row;
     align-items: center;
     gap: 24px;
+    justify-content: flex-start;
   }
   .first-work {
     display: none;
@@ -415,7 +416,7 @@ button:active {
     display: flex;
   }
   .sidesdes {
-    display: block;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
@@ -507,7 +508,7 @@ button:active {
     flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 12px;    
+    gap: 12px;
     margin: 0px 0px;
   }
   .ddhcodes {
@@ -517,7 +518,7 @@ button:active {
     font-size: 15px;
     line-height: 20px;
     list-style-type: none;
-    border: 1px solid  rgba(255, 255, 255, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.24);
     align-items: center;
     background: rgba(255, 255, 255, 0.24);
     padding: 10px 12px;
@@ -567,13 +568,13 @@ button:active {
     font-size: 15px;
     line-height: 20px;
     list-style-type: none;
-    border: 1px solid  rgba(255, 255, 255, 0.24);
+    border: 1px solid rgba(255, 255, 255, 0.24);
     align-items: center;
     padding: 10px 12px;
     color: #ffffff;
-    background-color:  rgba(255, 255, 255, 0.24);
+    background-color: rgba(255, 255, 255, 0.24);
   }
-  .dessecrow{
+  .dessecrow {
     display: flex;
     flex-direction: row;
     width: 100%;
