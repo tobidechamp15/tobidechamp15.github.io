@@ -243,15 +243,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 8px 16px;
-  width: 100%;
-  background-image: url("assets/desktop-view_images/Img Placeholder1.svg");
-  height: 435px;
+  padding: 8px 16px 0px 16px;
+  width: 100%;  
   display: flex;
   align-items: end;
   justify-content: end;
-  padding-bottom: 0px;
+  
 }
+
 
 .papdname {
   font-family: "Crete Round";
@@ -260,6 +259,7 @@ body {
   font-size: 32px;
   line-height: 44px;
   width: 100%;
+  color: #ffffff;
 }
 .papdbody {
   font-family: "Inter";
@@ -268,6 +268,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   width: 100%;
+  color: #fff5e1;
 }
 .papdcodes {
   display: flex;
@@ -285,39 +286,47 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
+  color: #ffffff;
 }
 .papdbtn {
   width: 100%;
   align-items: flex-end;
   display: flex;
   justify-content: end;
+  background-image: url("assets/mobile-view-images/new mob-img.svg");
+  background-repeat: no-repeat;
+  flex-direction: column;
+  background-size: cover;
+  
+  gap: 12px;
 }
 button {
   font-size: 17px;
   color: white;
-  background-color: transparent;
-  height: 45px;
+  background-color: #ff6b00;
+  height: 49px;
   width: 100%;
-  border: 2.5px solid;
+  border: none;
   transition: 0.3s all;
-  background-image: linear-gradient(45deg, purple, red, orange, red, purple);
+  /* background-image: linear-gradient(45deg, purple, red, orange, red, purple); */
   background-size: 500% 200%;
-  background-position: 5% 50%;
+  background-position: 5% 100%;
   font-family: inherit;
   font-weight: 500;
 }
 
-button:hover {
+/* button:hover {
   box-shadow: none;
   background-color: rgb(92, 92, 92);
   animation: rainbow 1s 1;
   transform: scale(1.13);
   border-radius: 30px;
   background-position: 90% 50%;
-}
+} */
 
 button:active {
   transform: scale(1.2);
+  width: 100%;
 }
 .desplchol {
   display: none;
@@ -587,4 +596,22 @@ button:active {
     background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom
       right no-repeat;
   }
+}
+@media screen and (min-width: 687px) {
+  body{
+    width: 100%;
+  }
+  .desktopfirstwork{
+    width: 50%;
+  }
+  .rec{
+    width: 100%;
+  }
+  .sidesdes{
+    width: 50%;
+  }
+  .desktopfirstwork{
+    width: 100%;
+  }
+  
 }
