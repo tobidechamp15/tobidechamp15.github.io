@@ -191,17 +191,14 @@ body {
     7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
-
 .btn:before {
   height: 0%;
   width: 2px;
 }
-
 .btn:after {
   width: 0%;
   height: 2px;
 }
-
 .btn:hover {
   color: rgba(251, 75, 2, 1);
   background: transparent;
@@ -250,8 +247,6 @@ body {
   justify-content: end;
   
 }
-
-
 .papdname {
   font-family: "Crete Round";
   font-style: normal;
@@ -314,16 +309,14 @@ button {
   font-family: inherit;
   font-weight: 500;
 }
-
 button:hover {
   box-shadow: none;
-  background-color: rgb(8, 0, 0);
+  background-color: #ff6b00;
   animation: rainbow 1s 1;
-  transform: scale(1.13);
+  
   border-radius: 30px  ;
   background-position: 90% 50%;
-} 
-
+}
 button:active {
   transform: scale(1.2);
   width: 100%;
@@ -346,7 +339,6 @@ button:active {
   align-items: end;
   justify-content: center; }
 */
-
 @media screen and (min-width: 686px) {
   .righthead {
     display: none;
@@ -397,6 +389,13 @@ button:active {
   .sidebar {
     margin-bottom: 160px;
   }
+  .myproject{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+  }
   .top {
     display: flex;
     flex-direction: row;
@@ -414,9 +413,8 @@ button:active {
   .rec {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 24px;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .first-work {
     display: none;
@@ -424,14 +422,14 @@ button:active {
   .desktopfirstwork {
     display: flex;
     width: 50%;
+    justify-content: center;
   }
-  #desimg{
-    width: 100%;
-  }
-  .sidesdes {
+  .sidedes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    height: 100%;
     width: 50%;
+    
   }
   .sidecont {
     font-family: "Inter";
@@ -467,8 +465,11 @@ button:active {
   }
   .desplchol {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 37px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .desfirrow {
     display: flex;
@@ -477,7 +478,7 @@ button:active {
     gap: 24px;
   }
   .desbtnscr {
-    width: 33.3%;
+    width: 303px;
     background-image: url("assets/desktop-view_images/Img Placeholder1.svg");
     height: 435px;
     display: flex;
@@ -491,7 +492,7 @@ button:active {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 33.3%;
+    width: 303px;
     background-image: url("assets/desktop-view_images/Img Placeholder2.svg");
     background-repeat: no-repeat;
     padding-bottom: 8px;
@@ -541,7 +542,7 @@ button:active {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 33.3%;
+    width: 303px;
     padding-bottom: 8px;
     padding: 16px 16px;
     padding-top: 170px;
@@ -594,7 +595,6 @@ button:active {
     gap: 24px;
   }
 }
-
 @media screen and (max-width: 1033px) {
   .body {
     background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom
@@ -606,12 +606,12 @@ button:active {
     width: 100%;
   }
   .desktopfirstwork{
-    width: 50%;
+    width:  50%;
   }
-  .rec{
+  .sidedes{
     width: 100%;
   }
-  .sidesdes{
+  .sidedes{
     width: 50%;
   }
   .desktopfirstwork{
