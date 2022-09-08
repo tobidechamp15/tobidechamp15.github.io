@@ -405,12 +405,118 @@ button:active {
   align-items: center;
   text-align: center;
 }
-.abtimgside{
+.abtimgside {
   display: none;
 }
-.abtmidside{
+.abtmidside {
   display: none;
 }
+.contactform {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 24px;
+  align-items: flex-start;
+  gap: 58px;
+}
+.contactdes {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+.contform {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  align-items: center;
+  width: 100%;
+}
+.fnameform {
+  width: 100%;
+}
+.labels {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #dbd8d7;
+  width: 100%;
+  margin: 14px 0px;
+}
+.label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+/* From uiverse.io by @satyamchaudharydev */
+/* === removing default button style ===*/
+.touch {
+  margin: 0;
+  background: white;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.touch {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #ff6b00;
+  --fs-size: 2em;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  position: relative;
+  text-transform: uppercase;
+  color: black;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.touch:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+.descontactform {
+  display: none;
+}
+
 @media screen and (min-width: 686px) {
   .righthead {
     display: none;
@@ -683,58 +789,101 @@ button:active {
   }
   .abtimgside {
     display: flex;
-    
+
     align-items: flex-start;
   }
-  .langs{
+  .langs {
     justify-content: flex-start;
   }
-  .abtmidside{
+  .abtmidside {
     display: none;
   }
-  #ab{
+  #ab {
     width: 673px;
     height: 353px;
   }
-}
-@media screen and (max-width: 1033px) {
-  .body {
-    background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom
-      right no-repeat;
+  .contactform {
+    display: none;
   }
-  .desabttop {
-    background-image: none;
+  .descontactform {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 130px;
-  }
-  
-}
-@media screen and (min-width: 687px) {
-  body {
     width: 100%;
+    align-items: flex-start;
+    padding: 130px 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 24px;
   }
-  .desktopfirstwork {
+  .descontactdes {
+    display: flex;
     width: 50%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
   }
-  .sidedes {
+  .deslabels {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #dbd8d7;
     width: 100%;
+    margin: 14px 0px;
   }
-  .sidedes {
-    width: 50%;
+  .deslabel {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
   }
-  .desktopfirstwork {
-    width: 100%;
-  }
-  #ab{
-    width: 337px;
-  }
-}
-@media screen and (max-width: 1030px) {
-  .rec{
+  .desformnames {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
-  
+  .desbtnfm {
+    width: 25%;
+    padding-top: 10px;
+  }
+  @media screen and (max-width: 1033px) {
+    .body {
+      background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom
+        right no-repeat;
+    }
+    .desabttop {
+      background-image: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 130px;
+    }
+  }
+  @media screen and (min-width: 687px) {
+    body {
+      width: 100%;
+    }
+    .desktopfirstwork {
+      width: 50%;
+    }
+    .sidedes {
+      width: 100%;
+    }
+    .sidedes {
+      width: 50%;
+    }
+    .desktopfirstwork {
+      width: 100%;
+    }
+    #ab {
+      width: 337px;
+    }
+  }
+  @media screen and (max-width: 1030px) {
+    .rec {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
