@@ -731,3 +731,10 @@ button:active {
     width: 337px;
   }
 }
+@media screen and (max-width: 1030px) {
+  .rec{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
