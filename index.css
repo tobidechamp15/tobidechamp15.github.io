@@ -241,11 +241,10 @@ body {
   flex-direction: column;
   gap: 12px;
   padding: 8px 16px 0px 16px;
-  width: 100%;  
+  width: 100%;
   display: flex;
   align-items: end;
   justify-content: end;
-  
 }
 .papdname {
   font-family: "Crete Round";
@@ -292,7 +291,7 @@ body {
   background-repeat: no-repeat;
   flex-direction: column;
   background-size: cover;
-  
+
   gap: 12px;
 }
 button {
@@ -303,7 +302,6 @@ button {
   width: 100%;
   border: none;
   transition: 0.3s all;
-  /* background-image: linear-gradient(45deg, purple, red, orange, red, purple);  */
   background-size: 500% 200%;
   background-position: 5% 100%;
   font-family: inherit;
@@ -313,8 +311,8 @@ button:hover {
   box-shadow: none;
   background-color: #ff6b00;
   animation: rainbow 1s 1;
-  
-  border-radius: 30px  ;
+
+  border-radius: 30px;
   background-position: 90% 50%;
 }
 button:active {
@@ -324,21 +322,95 @@ button:active {
 .desplchol {
   display: none;
 }
-/* .placeholders1 {
+.abtme {
+  background-color: #1c1a19;
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
+}
+.aboutme {
+  background-color: #1c1a19;
+
+  padding: 120px 24px 190px 24px;
   gap: 24px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/mobile-view-images/Frame.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.abttitle {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ff6b00;
+}
+.abtdes {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+.abtsplit {
+  height: 1px;
+  background-color: #ffff;
+  margin: 12px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-left: 0px;
+  justify-content: center;
 }
-.phs {
-  width: 100%;
-  background-image: url("assets/desktop-view_images/Img Placeholder1.svg");
-  height: 435px;
+.langs {
+  color: #f4f5f7;
+  font-family: "InaiMathi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
   display: flex;
-  align-items: end;
-  justify-content: center; }
-*/
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.abt .lgs {
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 12px;
+  gap: 8px;
+  justify-content: center;
+}
+.lng {
+  font-family: "Inter";
+  font-style: normal;
+  width: 100%;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 12px;
+  justify-content: center;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.abtimgside{
+  display: none;
+}
+.abtmidside{
+  display: none;
+}
 @media screen and (min-width: 686px) {
   .righthead {
     display: none;
@@ -389,12 +461,11 @@ button:active {
   .sidebar {
     margin-bottom: 160px;
   }
-  .myproject{
+  .myproject {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
   }
   .top {
     display: flex;
@@ -429,7 +500,6 @@ button:active {
     flex-direction: column;
     height: 100%;
     width: 50%;
-    
   }
   .sidecont {
     font-family: "Inter";
@@ -594,28 +664,77 @@ button:active {
     width: 100%;
     gap: 24px;
   }
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .desabttop {
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 99px;
+  }
+  .aboutme {
+    width: 50%;
+    background-image: none;
+    padding-top: 0px;
+  }
+  .abtimgside {
+    display: flex;
+    
+    align-items: flex-start;
+  }
+  .langs{
+    justify-content: flex-start;
+  }
+  .abtmidside{
+    display: none;
+  }
+  #ab{
+    width: 673px;
+    height: 353px;
+  }
 }
 @media screen and (max-width: 1033px) {
   .body {
     background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom
       right no-repeat;
   }
+  .desabttop {
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 130px;
+  }
+  
 }
 @media screen and (min-width: 687px) {
-  body{
+  body {
     width: 100%;
   }
-  .desktopfirstwork{
-    width:  50%;
-  }
-  .sidedes{
-    width: 100%;
-  }
-  .sidedes{
+  .desktopfirstwork {
     width: 50%;
   }
-  .desktopfirstwork{
+  .sidedes {
     width: 100%;
+  }
+  .sidedes {
+    width: 50%;
+  }
+  .desktopfirstwork {
+    width: 100%;
+  }
+  #ab{
+    width: 337px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .rec{
+    display: flex;
+    flex-direction: column;
   }
   
 }
