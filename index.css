@@ -302,7 +302,6 @@ button {
   width: 100%;
   border: none;
   transition: 0.3s all;
-  /* background-image: linear-gradient(45deg, purple, red, orange, red, purple);  */
   background-size: 500% 200%;
   background-position: 5% 100%;
   font-family: inherit;
@@ -332,7 +331,7 @@ button:active {
 .aboutme {
   background-color: #1c1a19;
 
-  padding: 120px 24px;
+  padding: 120px 24px 190px 24px;
   gap: 24px;
   display: flex;
   flex-direction: column;
@@ -407,6 +406,9 @@ button:active {
   text-align: center;
 }
 .abtimgside{
+  display: none;
+}
+.abtmidside{
   display: none;
 }
 @media screen and (min-width: 686px) {
@@ -671,18 +673,28 @@ button:active {
     background-image: none;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-top: 99px;
   }
   .aboutme {
     width: 50%;
     background-image: none;
+    padding-top: 0px;
   }
   .abtimgside {
-    padding-top: 99px;
     display: flex;
-    padding-left: 18px;
+    
+    align-items: flex-start;
   }
   .langs{
     justify-content: flex-start;
+  }
+  .abtmidside{
+    display: none;
+  }
+  #ab{
+    width: 673px;
+    height: 353px;
   }
 }
 @media screen and (max-width: 1033px) {
@@ -690,13 +702,14 @@ button:active {
     background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom
       right no-repeat;
   }
-  .abtimgside{
-    display: none;
-  }
-  .abtmidside{
+  .desabttop {
+    background-image: none;
     display: flex;
-    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 130px;
   }
+  
 }
 @media screen and (min-width: 687px) {
   body {
@@ -713,5 +726,8 @@ button:active {
   }
   .desktopfirstwork {
     width: 100%;
+  }
+  #ab{
+    width: 337px;
   }
 }
