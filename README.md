@@ -14,6 +14,8 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 Have Vscode installed
 Liveserver
+## Live Demo
+https://tobidechampportfolio.netlify.app/
 
 ### Setup
 Clone the reprository
