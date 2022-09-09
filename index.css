@@ -471,7 +471,7 @@ textarea {
 /* === removing default button style ===*/
 .touch {
   margin: 0;
-  background: white;
+  background: #ff6b00;
   padding: 0;
   border: none;
 }
@@ -479,8 +479,8 @@ textarea {
 /* button styling */
 .touch {
   --border-right: 6px;
-  --text-stroke-color: rgba(255, 255, 255, 0.6);
-  --animation-color: #ff6b00;
+  --text-stroke-color: white;
+  --animation-color: black;
   --fs-size: 2em;
   letter-spacing: 1px;
   text-decoration: none;
@@ -515,6 +515,12 @@ textarea {
 }
 .descontactform {
   display: none;
+}
+input:focus{
+  outline: none;
+}
+textarea:focus{
+  outline: none;
 }
 
 @media screen and (min-width: 686px) {
@@ -770,6 +776,12 @@ textarea {
     width: 100%;
     gap: 24px;
   }
+  .abtdes{
+    font-size: 20px;
+  }
+  .lng{
+    font-size: 22px;
+  }
   .skills {
     display: flex;
     flex-direction: row;
@@ -885,5 +897,13 @@ textarea {
       display: flex;
       flex-direction: column;
     }
+    .sidedes{
+      width: 100%;
+      padding: 0px 84px;
+    }
+    .rec{
+      align-items: center;
+    }
+
   }
 }
