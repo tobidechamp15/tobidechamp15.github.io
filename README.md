@@ -13,8 +13,10 @@ To get a local copy up and running follow these simple example steps.
 
 Have Vscode installed
 Liveserver
+
 ## Live Demo
-https://tobidechampportfolio.netlify.app/
+
+<https://tobidechampportfolio.netlify.app/>
 
 ### Setup
 
