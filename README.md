@@ -2,20 +2,20 @@
 
 > A web page designed for the purpose of showcasing projects done by me.
 
-
 ## Built With
 
 - HTML, CSS
 - GIT and Github used
 
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 Have Vscode installed
 Liveserver
 
 ### Setup
+
 Clone the reprository
 Open with liveserver
 
@@ -26,7 +26,6 @@ Open with liveserver
 - GitHub: [@githubhandle](https://github.com/tobidechamp15)
 - Twitter: [@twitterhandle](https://twitter.com/tobidechamp15)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tobiloba-oluwadare-4bba71249/)
-
 
 ## 🤝 Contributing
 
