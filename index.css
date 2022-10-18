@@ -3,6 +3,8 @@
 }
 body {
   margin: 0px;
+  display: flex;
+  flex-direction: column;
 }
 .nav {
   height: 92px;
@@ -241,11 +243,10 @@ body {
   flex-direction: column;
   gap: 12px;
   padding: 8px 16px 0px 16px;
-  width: 100%;  
+  width: 100%;
   display: flex;
   align-items: end;
   justify-content: end;
-  
 }
 .papdname {
   font-family: "Crete Round";
@@ -292,7 +293,7 @@ body {
   background-repeat: no-repeat;
   flex-direction: column;
   background-size: cover;
-  
+
   gap: 12px;
 }
 button {
@@ -303,7 +304,6 @@ button {
   width: 100%;
   border: none;
   transition: 0.3s all;
-  /* background-image: linear-gradient(45deg, purple, red, orange, red, purple);  */
   background-size: 500% 200%;
   background-position: 5% 100%;
   font-family: inherit;
@@ -313,8 +313,8 @@ button:hover {
   box-shadow: none;
   background-color: #ff6b00;
   animation: rainbow 1s 1;
-  
-  border-radius: 30px  ;
+
+  border-radius: 30px;
   background-position: 90% 50%;
 }
 button:active {
@@ -324,21 +324,228 @@ button:active {
 .desplchol {
   display: none;
 }
-/* .placeholders1 {
+.abtme {
+  background-color: #1c1a19;
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
+}
+.aboutme {
+  background-color: #1c1a19;
+
+  padding: 120px 24px 190px 24px;
   gap: 24px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/mobile-view-images/Frame.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.abttitle {
+  font-family: "Crete Round";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ff6b00;
+}
+.abtdes {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+}
+.abtsplit {
+  height: 1px;
+  background-color: #ffff;
+  margin: 12px;
+}
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-left: 0px;
+  justify-content: center;
+}
+.langs {
+  color: #f4f5f7;
+  font-family: "InaiMathi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+.abt .lgs {
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 12px;
+  gap: 8px;
+  justify-content: center;
+}
+.lng {
+  font-family: "Inter";
+  font-style: normal;
+  width: 100%;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 12px;
+  justify-content: center;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.abtimgside {
+  display: none;
+}
+.abtmidside {
+  display: none;
+}
+.contactform {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 24px;
+  align-items: flex-start;
+  gap: 58px;
+}
+.contactdes {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+.contform {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
   align-items: center;
   width: 100%;
 }
-.phs {
+.fnameform {
   width: 100%;
-  background-image: url("assets/desktop-view_images/Img Placeholder1.svg");
-  height: 435px;
+}
+.labels {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #dbd8d7;
+  width: 100%;
+  margin: 14px 0px;
+}
+.label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #3c3a39;
+}
+/* From uiverse.io by @satyamchaudharydev */
+/* === removing default button style ===*/
+.touch {
+  margin: 0;
+  background: #ff6b00;
+  padding: 0;
+  border: none;
+}
+
+/* button styling */
+.touch {
+  --border-right: 6px;
+  --text-stroke-color: white;
+  --animation-color: black;
+  --fs-size: 2em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  position: relative;
+  text-transform: uppercase;
+  color: black;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.touch:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+.descontactform {
+  display: none;
+}
+input:focus{
+  outline: none;
+}
+textarea:focus{
+  outline: none;
+}
+.footsplit{
+  height: 1px;
+  background-color: #DFE1E6;
+  width: 100%;
   display: flex;
-  align-items: end;
-  justify-content: center; }
-*/
+}
+.footsocials{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  gap: 20px;
+  list-style-type: none;
+  justify-content: center;
+  padding-left: 0px;
+  padding-bottom: 26px;
+  padding-top: 15px;
+}
+.footsocial{
+  padding-left: 0px;
+
+}
 @media screen and (min-width: 686px) {
   .righthead {
     display: none;
@@ -389,12 +596,11 @@ button:active {
   .sidebar {
     margin-bottom: 160px;
   }
-  .myproject{
+  .myproject {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-
   }
   .top {
     display: flex;
@@ -429,7 +635,6 @@ button:active {
     flex-direction: column;
     height: 100%;
     width: 50%;
-    
   }
   .sidecont {
     font-family: "Inter";
@@ -594,28 +799,134 @@ button:active {
     width: 100%;
     gap: 24px;
   }
-}
-@media screen and (max-width: 1033px) {
-  .body {
-    background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom
-      right no-repeat;
+  .abtdes{
+    font-size: 20px;
   }
-}
-@media screen and (min-width: 687px) {
-  body{
-    width: 100%;
+  .lng{
+    font-size: 22px;
   }
-  .desktopfirstwork{
-    width:  50%;
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
   }
-  .sidedes{
-    width: 100%;
+  .desabttop {
+    background-image: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 99px;
   }
-  .sidedes{
+  .aboutme {
     width: 50%;
+    background-image: none;
+    padding-top: 0px;
   }
-  .desktopfirstwork{
+  .abtimgside {
+    display: flex;
+
+    align-items: flex-start;
+  }
+  .langs {
+    justify-content: flex-start;
+  }
+  .abtmidside {
+    display: none;
+  }
+  #ab {
+    width: 673px;
+    height: 353px;
+  }
+  .contactform {
+    display: none;
+  }
+  .descontactform {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    padding: 130px 0px;
+    padding-left: 32px;
+    padding-right: 32px;
+    gap: 24px;
+  }
+  .descontactdes {
+    display: flex;
+    width: 50%;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .deslabels {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #dbd8d7;
+    width: 100%;
+    margin: 14px 0px;
+  }
+  .deslabel {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .desformnames {
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
-  
+  .desbtnfm {
+    width: 25%;
+    padding-top: 10px;
+  }
+  @media screen and (max-width: 1033px) {
+    .body {
+      background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom
+        right no-repeat;
+    }
+    .desabttop {
+      background-image: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 130px;
+    }
+  }
+  @media screen and (min-width: 687px) {
+    body {
+      width: 100%;
+    }
+    .desktopfirstwork {
+      width: 50%;
+    }
+    .sidedes {
+      width: 100%;
+    }
+    .sidedes {
+      width: 50%;
+    }
+    .desktopfirstwork {
+      width: 100%;
+    }
+    #ab {
+      width: 337px;
+    }
+  }
+  @media screen and (max-width: 1030px) {
+    .rec {
+      display: flex;
+      flex-direction: column;
+    }
+    .sidedes{
+      width: 100%;
+      padding: 0px 84px;
+    }
+    .rec{
+      align-items: center;
+    }
+
+  }
 }
