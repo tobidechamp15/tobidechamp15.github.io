@@ -1,6 +1,40 @@
 * {
   box-sizing: border-box;
 }
+
+#nameError{
+  color: red;
+
+}
+.hidden{
+  display: none;
+}
+#snameError{
+  color: red;
+}
+.error{
+  color: red;
+}
+.shidden{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
   margin: 0px;
   display: flex;
@@ -14,6 +48,48 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+.lines-btn{
+  height: 3px;
+  width: 20px;
+  color: #fff;
+  border: 5px;
+}
+#overlay{
+  background: #3C3A39;
+    mix-blend-mode: normal;
+    /* Base/ Soft */
+  
+    box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+}
+#cancel{
+  height: 14px;
+  width: 14px;
+  
+}
+.cancel-bro{
+  background-color: transparent;
+  color: transparent;
+  height: 2px;
+  width: 2px;
+}
+.lines{
+  height: 1px;
+  width: 100%;
+  background: #6F6C6B;
+}
+.nav-list{
+  font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    /* or 138% */
+  
+    display: flex;
+    align-items: center;
+  
+    color: #FFF5E1;
+}
 .lefthead {
   width: fit-content;
   height: 24px;
@@ -26,13 +102,14 @@ body {
   margin-left: 24px;
   text-align: center;
 }
-.righthead {
+ 
+/* #righthead {
   height: 12px;
   display: flex;
   flex-direction: column;
   margin-top: 62px;
   margin-right: 24px;
-}
+} */
 .menubar {
   width: 20px;
   height: 3px;
@@ -557,7 +634,7 @@ textarea:focus{
   font-family: "Roboto";
 }
 @media screen and (min-width: 686px) {
-  .righthead {
+  #righthead {
     display: none;
   }
   .righthead2 {
@@ -904,6 +981,9 @@ textarea:focus{
       justify-content: space-between;
       padding-top: 130px;
     }
+        #overlay {
+          display: none;
+        }
   }
   @media screen and (min-width: 687px) {
     body {
@@ -914,6 +994,9 @@ textarea:focus{
     }
     .sidedes {
       width: 100%;
+    }
+    #overlay{
+      display: none;
     }
     .sidedes {
       width: 50%;
@@ -937,6 +1020,5 @@ textarea:focus{
     .rec{
       align-items: center;
     }
-
   }
 }
