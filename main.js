@@ -83,9 +83,18 @@ navBar.addEventListener("click", clickMe);
 const navList = document.querySelector("#overlay");
 
 function clickMe() {
-  navList.style.display=("block")
-  console.log((2+3).value);
+  navList.classList.remove("d-none");
+  console.log("clicking");
 }
 console.log(navList)
 
 console.log(navBar);
+
+const cancel = document.querySelector("#cancel");
+
+cancel.addEventListener("click", navCancel)
+
+function navCancel() {
+  navList.classList.add("d-none")
+  console.log("cancel o");
+}
