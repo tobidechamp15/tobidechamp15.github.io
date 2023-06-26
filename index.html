@@ -382,22 +382,37 @@
       </div>
     </form>
     <!-- Form for desktop view -->
-     <form id="des-form" class="d-flex flex-column w-50 align-items-ceter gap-2 ps-2">
-        <label for="fname" >First Name</label>
-        <input type="text" name="fname" id="fname">
-        <span class="hidden error" id="nameError">Name is required</span>
+    <section class=" des-form  d-none d-sm-flex d-md-flex ">
+    <div class="w-50 "><span class="des-formAbt">I'm always interested  in hearing about new projects, so if you'd  like to chat please  get in touch.</span></div>
+    <form id="myForm" class="d-flex flex-column gap-2 w-50">
+  <div class="d-flex flex-column">
+    <label class="form-name" for="firstName">First Name:</label>
+    <input type="text" class="w-100 input-box" id="firstName" required>
+    <div id="nameError" class="error-message" aria-live="assertive" aria-hidden="true">First name is required</div>
+  </div>
 
-        <label for="sname" >Second Name</label>
-        <input type="text" name="sname" id="sname">
-        <span class="hidden error" id="snameError">Surname is required</span>
+  <div class="d-flex flex-column">
+    <label class="form-name" for="surName">Surname:</label>
+    <input type="text" class="w-100 input-box" id="surName" required>
+    <div id="surNameError" class="error-message" aria-live="assertive" aria-hidden="true">Surname is required</div>
+  </div>
 
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
+  <div class="d-flex flex-column">
+    <label class="form-name" for="Email">Email address</label>
+    <input type="email"class="w-100 input-box" id="Email" required>
+    <div id="emailError" class="error-message" aria-live="assertive" aria-hidden="true">
+      <span id="emailErrorMessage">Email is required</span>
+    </div>
+  </div>
 
-        <textarea name="tarea" id="tarea" cols="30" rows="10">Hello </textarea>
-        
-        <button type="submit">Get in touch</button>
-     </form>
+  <div>
+     <!-- <label for="comment">Comment:</label> -->
+    <textarea class="w-100 txt-area" placeholder="write something here.."  id="comment" required></textarea>
+    <div id="commentError" class="error-message" aria-live="assertive" aria-hidden="true">Comment is required</div>
+  </div>
+
+  <button type="submit" id="submit">Submit</button>
+</form></section>
     <div class="footsplit"></div>
     <div class="footsocial">
       <ul class="footsocials">
