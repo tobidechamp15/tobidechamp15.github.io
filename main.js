@@ -81,9 +81,10 @@ const navBar = document.querySelector("#righthead");
 
 navBar.addEventListener("click", clickMe);
 const navList = document.querySelector("#overlay");
-
+const nameLogo = document.querySelector(".nav");
 function clickMe() {
   navList.classList.remove("d-none");
+  nameLogo.style.display=("none")
   console.log("clicking");
 }
 console.log(navList)
@@ -96,5 +97,7 @@ cancel.addEventListener("click", navCancel)
 
 function navCancel() {
   navList.classList.add("d-none")
+  nameLogo.style.display=("flex")
   console.log("cancel o");
 }
+console.log(nameLogo);
