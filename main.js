@@ -74,9 +74,6 @@ function isValidEmail(email) {
 const submitButton = document.getElementById("submit");
 submitButton.addEventListener("click", validateForm);
 
-
-
-
 const navBar = document.querySelector("#righthead");
 
 navBar.addEventListener("click", clickMe);
@@ -84,20 +81,20 @@ const navList = document.querySelector("#overlay");
 const nameLogo = document.querySelector(".nav");
 function clickMe() {
   navList.classList.remove("d-none");
-  nameLogo.style.display=("none")
+  nameLogo.style.display = "none";
   console.log("clicking");
 }
-console.log(navList)
+console.log(navList);
 
 console.log(navBar);
 
 const cancel = document.querySelector("#cancel");
 
-cancel.addEventListener("click", navCancel)
+cancel.addEventListener("click", navCancel);
 
 function navCancel() {
-  navList.classList.add("d-none")
-  nameLogo.style.display=("flex")
+  navList.classList.add("d-none");
+  nameLogo.style.display = "flex";
   console.log("cancel o");
 }
 console.log(nameLogo);
