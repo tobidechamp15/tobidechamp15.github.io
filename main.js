@@ -81,6 +81,7 @@ const navList = document.querySelector("#overlay");
 const nameLogo = document.querySelector(".nav");
 function clickMe() {
   navList.classList.remove("d-none");
+  // navList.style.transition = ".5s";
   nameLogo.style.display = "none";
   console.log("clicking");
 }
@@ -98,3 +99,19 @@ function navCancel() {
   console.log("cancel o");
 }
 console.log(nameLogo);
+
+const about = document.querySelector(".item2");
+about.addEventListener("click", function () {
+   
+    var section = document.querySelector(".aboutme");
+    section.scrollIntoView({ behavior: "smooth" });
+  
+  
+})
+const contact = document.querySelector(".item3");
+contact.addEventListener("click", function () {
+   
+    var section = document.querySelector(".des-form");
+    section.scrollIntoView({ behavior: "smooth" });
+  
+})

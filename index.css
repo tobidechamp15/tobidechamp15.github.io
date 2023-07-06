@@ -18,7 +18,7 @@
   font-weight: 700;
   line-height: 52px;
 }
-.des-form {
+/* .des-form {
   display: inline-flex;
   padding-top: 8.125rem;
   padding-bottom: 8.125rem;
@@ -26,7 +26,7 @@
   gap: 1.5rem;
   padding-left: 8.44rem;
   padding-right: 8.88rem;
-}
+} */
 .form-name {
   color: var(--theme-3-neutral-6, #979493);
   font-size: 0.9375rem;
@@ -70,13 +70,16 @@ body {
 #overlay {
   background: #3c3a39;
   mix-blend-mode: normal;
+  transition: .5s;
   /* Base/ Soft */
   height: 100vh;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  padding-top: 2.75rem;
 }
 #cancel {
   height: 14px;
   width: 14px;
+   transition: .5s;
 }
 .cancel-bro {
   background-color: transparent;
@@ -90,11 +93,13 @@ body {
   background: #6f6c6b;
 }
 .nav-list {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  color: #FFF5E1;
+font-family: Inter;
+font-size: 2em;
+font-style: normal;
+font-weight: 700;
+line-height: 2.75em;
+  margin-left: 20px;
   /* or 138% */
 
   display: flex;
@@ -121,6 +126,10 @@ body {
   flex-direction: column;
   margin-top: 62px;
   margin-right: 24px;
+   transition: .5s;
+}
+#menu{
+   transition: .5s;
 }
 .menubar {
   width: 20px;
@@ -142,14 +151,13 @@ body {
   gap: 12px;
 }
 .intro {
-  width: 327px;
-  height: 124px;
-  font-family: "Crete Round";
-  font-size: 56px;
-  color: #ff6b00;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 64px;
+  color: var(--theme-3-primary-1, #FF6B00);
+font-family: Crete Round;
+font-size: 3.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 4rem;
+letter-spacing: 0.02313em
 }
 .subintro {
   color: #fff5e1;
@@ -161,15 +169,14 @@ body {
   margin-top: 12px;
 }
 .content {
-  width: 327px;
-  height: 123px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-  margin-top: 12px;
+  color: var(--theme-3-neutral-11, #FFF);
+/* Theme 1 / Body Reguler 2 */
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem;
+/* width: 35.375rem; */
 }
 .socials {
   display: flex;
@@ -214,6 +221,9 @@ body {
   width: 100%;
   justify-content: center;
   display: flex;
+}
+#fw{
+  width: 100%;
 }
 .desktopfirstwork {
   display: none;
@@ -780,14 +790,11 @@ textarea:focus {
     width: 100%;
     gap: 24px;
   }
-  .desbtnscr {
+  .to-do{
     width: 303px;
-    background-image: url("assets/desktop-view_images/Img Placeholder1.svg");
     height: 435px;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
   }
+  
   button {
     height: 58px;
   }
@@ -1000,6 +1007,9 @@ textarea:focus {
     body {
       width: 100%;
     }
+    .content{
+      width: 35.375rem;
+    }
     .desktopfirstwork {
       width: 50%;
     }
@@ -1017,6 +1027,12 @@ textarea:focus {
     }
     #ab {
       width: 337px;
+    }
+    .des-form{
+      padding: 30px 30px 30px 50px;
+    }
+    .des-formAbt{
+      font-size: 30px;
     }
   }
   @media screen and (max-width: 1030px) {
