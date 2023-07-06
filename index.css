@@ -60,6 +60,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
 }
 .lines-btn {
   height: 3px;
@@ -797,6 +798,20 @@ textarea:focus {
   
   button {
     height: 58px;
+  }
+  .item1:hover{
+    color: #FF6B00;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .item2:hover{
+cursor: pointer;
+color: #FF6B00;
+font-size: 18px;
+  }
+  .item3:hover{
+cursor: pointer;
+color: #FF6B00;font-size: 18px;
   }
   .ddh {
     display: flex;

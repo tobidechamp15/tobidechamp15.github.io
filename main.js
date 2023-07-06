@@ -99,15 +99,21 @@ function navCancel() {
   console.log("cancel o");
 }
 console.log(nameLogo);
+const projects = document.querySelector(".item1");
+projects.addEventListener("click", function () {
+   
+    var section = document.querySelector(".desplchol");
+    section.scrollIntoView({ behavior: "smooth" });
+  
+})
 
 const about = document.querySelector(".item2");
 about.addEventListener("click", function () {
    
     var section = document.querySelector(".aboutme");
     section.scrollIntoView({ behavior: "smooth" });
-  
-  
 })
+
 const contact = document.querySelector(".item3");
 contact.addEventListener("click", function () {
    
@@ -115,10 +121,22 @@ contact.addEventListener("click", function () {
     section.scrollIntoView({ behavior: "smooth" });
   
 })
-const projects = document.querySelector(".item1");
-contact.addEventListener("click", function () {
-   
-    var section = document.querySelector(".desplchol");
-    section.scrollIntoView({ behavior: "smooth" });
-  
-})
+
+const toProjects = document.querySelector(".toProjects");
+toProjects.addEventListener("click", function () {
+  var section = document.querySelector(".repplchol");
+  section.scrollIntoView({ behavior: "smooth" });
+  console.log("clikkk");
+});
+const toAbout = document.querySelector(".toAbout");
+toAbout.addEventListener("click", function () {
+  var section = document.querySelector(".desabttop");
+  section.scrollIntoView({ behavior: "smooth" });
+  console.log("clikkk");
+});
+const toContact = document.querySelector(".toContact");
+toContact.addEventListener("click", function () {
+  var section = document.querySelector(".contactform");
+  section.scrollIntoView({ behavior: "smooth" });
+  console.log("clikkk");
+});
