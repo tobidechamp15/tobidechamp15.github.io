@@ -115,3 +115,10 @@ contact.addEventListener("click", function () {
     section.scrollIntoView({ behavior: "smooth" });
   
 })
+const projects = document.querySelector(".item1");
+contact.addEventListener("click", function () {
+   
+    var section = document.querySelector(".desplchol");
+    section.scrollIntoView({ behavior: "smooth" });
+  
+})
