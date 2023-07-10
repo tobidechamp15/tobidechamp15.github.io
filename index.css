@@ -81,6 +81,7 @@ body {
   height: 14px;
   width: 14px;
    transition: .5s;
+   cursor: pointer;
 }
 .cancel-bro {
   background-color: transparent;
@@ -101,6 +102,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 2.75em;
   margin-left: 20px;
+  cursor: pointer;
   /* or 138% */
 
   display: flex;
@@ -127,6 +129,7 @@ line-height: 2.75em;
   flex-direction: column;
   margin-top: 62px;
   margin-right: 24px;
+  cursor: pointer;
    transition: .5s;
 }
 #menu{
@@ -396,7 +399,8 @@ line-height: 1.5rem;
   align-items: flex-end;
   display: flex;
   justify-content: end;
-  background-image: url("assets/mobile-view-images/new mob-img.svg");
+  /* background-image: url("assets/mobile-view-images/new mob-img.svg"); */
+  background-image: url("assets/desktop-view_images/dim(200).png");
   background-repeat: no-repeat;
   flex-direction: column;
   background-size: cover;
@@ -798,6 +802,9 @@ textarea:focus {
   
   button {
     height: 58px;
+  }
+  .item1{
+    cursor: pointer;
   }
   .item1:hover{
     color: #FF6B00;
