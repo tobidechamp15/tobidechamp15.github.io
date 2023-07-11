@@ -18,15 +18,7 @@
   font-weight: 700;
   line-height: 52px;
 }
-/* .des-form {
-  display: inline-flex;
-  padding-top: 8.125rem;
-  padding-bottom: 8.125rem;
-  align-items: flex-start;
-  gap: 1.5rem;
-  padding-left: 8.44rem;
-  padding-right: 8.88rem;
-} */
+
 .form-name {
   color: var(--theme-3-neutral-6, #979493);
   font-size: 0.9375rem;
@@ -72,7 +64,6 @@ body {
   background: #3c3a39;
   mix-blend-mode: normal;
   transition: .5s;
-  /* Base/ Soft */
   height: 100vh;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   padding-top: 2.75rem;
@@ -103,7 +94,7 @@ font-weight: 700;
 line-height: 2.75em;
   margin-left: 20px;
   cursor: pointer;
-  /* or 138% */
+
 
   display: flex;
   align-items: center;
@@ -174,13 +165,13 @@ letter-spacing: 0.02313em
 }
 .content {
   color: var(--theme-3-neutral-11, #FFF);
-/* Theme 1 / Body Reguler 2 */
+
 font-family: Poppins;
 font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: 1.5rem;
-/* width: 35.375rem; */
+
 }
 .socials {
   display: flex;
@@ -191,7 +182,7 @@ line-height: 1.5rem;
   gap: 20px;
   list-style-type: none;
 }
-/* Second Webpage */
+
 .myproject {
   padding-top: 120px;
   padding-left: 24px;
@@ -286,10 +277,9 @@ line-height: 1.5rem;
   border: none;
 }
 .btn span {
-  /*position: relative;*/
+ 
   display: flex;
-  /* width: 100%;
-  height: 100%; */
+ 
 }
 .btn:before,
 .btn:after {
@@ -399,7 +389,7 @@ line-height: 1.5rem;
   align-items: flex-end;
   display: flex;
   justify-content: end;
-  /* background-image: url("assets/mobile-view-images/new mob-img.svg"); */
+ 
   background-image: url("assets/desktop-view_images/dim(200).png");
   background-repeat: no-repeat;
   flex-direction: column;
@@ -580,8 +570,7 @@ textarea {
   line-height: 24px;
   color: #3c3a39;
 }
-/* From uiverse.io by @satyamchaudharydev */
-/* === removing default button style ===*/
+
 .touch {
   margin: 0;
   background: #ff6b00;
@@ -589,7 +578,7 @@ textarea {
   border: none;
 }
 
-/* button styling */
+
 .touch {
   --border-right: 6px;
   --text-stroke-color: white;
@@ -607,7 +596,7 @@ textarea {
   color: black;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -620,7 +609,7 @@ textarea {
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
+
 .touch:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));

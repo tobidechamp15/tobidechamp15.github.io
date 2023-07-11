@@ -81,7 +81,7 @@ const navList = document.querySelector("#overlay");
 const nameLogo = document.querySelector(".nav");
 function clickMe() {
   navList.classList.remove("d-none");
-  // navList.style.transition = ".5s";
+  
   nameLogo.style.display = "none";
   console.log("clicking");
 }
