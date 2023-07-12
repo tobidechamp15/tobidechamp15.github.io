@@ -1,8 +1,6 @@
 # My-Portfolio
 
 > A web page designed for the purpose of showcasing projects done by me.
-
-
 ## Built With
 
 - HTML, CSS
@@ -20,9 +18,10 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Live Demo](https://tobidechampportfolio.netlify.app/)
+[Live Demo](https://oluwatobiloba-portfolio.netlify.app//)
 
 ### Setup
+
 Clone the reprository
 Open with liveserver
 
