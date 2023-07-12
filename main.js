@@ -140,3 +140,4 @@ toContact.addEventListener("click", function () {
   section.scrollIntoView({ behavior: "smooth" });
   console.log("clikkk");
 });
+
