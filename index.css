@@ -1,6 +1,46 @@
 * {
   box-sizing: border-box;
 }
+
+
+.error-message {
+  display: none;
+  color: red;
+  margin-top: 5px;
+}
+
+.error-message.visible {
+  display: block;
+}
+.des-formAbt {
+  color: #262626;
+  font-size: 40px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.form-name {
+  color: var(--theme-3-neutral-6, #979493);
+  font-size: 0.9375rem;
+  font-family: Roboto;
+  line-height: 1.5rem;
+}
+.input-box {
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #dbd8d7;
+  width: 100%;
+  margin: 14px 0px;
+}
+.txt-area ::placeholder {
+  color: var(--theme-3-neutral-2, #3c3a39);
+  font-size: 0.9375rem;
+  font-family: Inter;
+  font-style: italic;
+  line-height: 1.5rem;
+}
+
 body {
   margin: 0px;
   display: flex;
@@ -13,6 +53,54 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
+}
+.lines-btn {
+  height: 3px;
+  width: 20px;
+  color: #fff;
+  border: 5px;
+}
+#overlay {
+  background: #3c3a39;
+  mix-blend-mode: normal;
+  transition: .5s;
+  height: 100vh;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  padding-top: 2.75rem;
+}
+#cancel {
+  height: 14px;
+  width: 14px;
+   transition: .5s;
+   cursor: pointer;
+}
+.cancel-bro {
+  background-color: transparent;
+  color: transparent;
+  height: 2px;
+  width: 2px;
+}
+.lines {
+  height: 1px;
+  width: 100%;
+  background: #6f6c6b;
+}
+.nav-list {
+  color: #FFF5E1;
+font-family: Inter;
+font-size: 2em;
+font-style: normal;
+font-weight: 700;
+line-height: 2.75em;
+  margin-left: 20px;
+  cursor: pointer;
+
+
+  display: flex;
+  align-items: center;
+
+  color: #fff5e1;
 }
 .lefthead {
   width: fit-content;
@@ -26,12 +114,18 @@ body {
   margin-left: 24px;
   text-align: center;
 }
-.righthead {
+
+#righthead {
   height: 12px;
   display: flex;
   flex-direction: column;
   margin-top: 62px;
   margin-right: 24px;
+  cursor: pointer;
+   transition: .5s;
+}
+#menu{
+   transition: .5s;
 }
 .menubar {
   width: 20px;
@@ -42,25 +136,27 @@ body {
 .righthead2 {
   display: none;
 }
+#particles-js{
+  background: rgb(19, 18, 18);
+}
 .body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 120px 24px;
-  background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom right
-    no-repeat;
+   background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom right
+    no-repeat; 
   gap: 12px;
 }
 .intro {
-  width: 327px;
-  height: 124px;
-  font-family: "Crete Round";
-  font-size: 56px;
-  color: #ff6b00;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 64px;
+  color: var(--theme-3-primary-1, #FF6B00);
+font-family: Crete Round;
+font-size: 3.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 4rem;
+letter-spacing: 0.02313em
 }
 .subintro {
   color: #fff5e1;
@@ -72,15 +168,14 @@ body {
   margin-top: 12px;
 }
 .content {
-  width: 327px;
-  height: 123px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-  margin-top: 12px;
+  color: var(--theme-3-neutral-11, #FFF);
+
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem;
+
 }
 .socials {
   display: flex;
@@ -91,7 +186,7 @@ body {
   gap: 20px;
   list-style-type: none;
 }
-/* Second Webpage */
+
 .myproject {
   padding-top: 120px;
   padding-left: 24px;
@@ -126,6 +221,9 @@ body {
   justify-content: center;
   display: flex;
 }
+#fw{
+  width: 100%;
+}
 .desktopfirstwork {
   display: none;
 }
@@ -148,8 +246,11 @@ body {
   padding: 10px;
   width: fit-content;
 }
+.custom-mail {
+  cursor: pointer;
+}
 .custom-btn {
-  width: 130px;
+  width: fit-content;
   height: 40px;
   color: #ffff;
   border-radius: 5px;
@@ -165,6 +266,10 @@ body {
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
+.custom-btn-get {
+  width: fit-content;
+  height: fit-content;
+}
 .btn {
   background: linear-gradient(
     0deg,
@@ -176,10 +281,9 @@ body {
   border: none;
 }
 .btn span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
+ 
+  display: flex;
+ 
 }
 .btn:before,
 .btn:after {
@@ -289,7 +393,8 @@ body {
   align-items: flex-end;
   display: flex;
   justify-content: end;
-  background-image: url("assets/mobile-view-images/new mob-img.svg");
+ 
+  background-image: url("assets/desktop-view_images/dim(200).png");
   background-repeat: no-repeat;
   flex-direction: column;
   background-size: cover;
@@ -469,8 +574,7 @@ textarea {
   line-height: 24px;
   color: #3c3a39;
 }
-/* From uiverse.io by @satyamchaudharydev */
-/* === removing default button style ===*/
+
 .touch {
   margin: 0;
   background: #ff6b00;
@@ -478,7 +582,7 @@ textarea {
   border: none;
 }
 
-/* button styling */
+
 .touch {
   --border-right: 6px;
   --text-stroke-color: white;
@@ -496,7 +600,7 @@ textarea {
   color: black;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -509,7 +613,7 @@ textarea {
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
-/* hover */
+
 .touch:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
@@ -517,19 +621,19 @@ textarea {
 .descontactform {
   display: none;
 }
-input:focus{
+input:focus {
   outline: none;
 }
-textarea:focus{
+textarea:focus {
   outline: none;
 }
-.footsplit{
+.footsplit {
   height: 1px;
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
   width: 100%;
   display: flex;
 }
-.footsocials{
+.footsocials {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -542,12 +646,14 @@ textarea:focus{
   padding-bottom: 26px;
   padding-top: 15px;
 }
-.footsocial{
+.footsocial {
   padding-left: 0px;
-
+}
+.custom-language {
+  font-family: "Roboto";
 }
 @media screen and (min-width: 686px) {
-  .righthead {
+  #righthead {
     display: none;
   }
   .righthead2 {
@@ -682,16 +788,30 @@ textarea:focus{
     width: 100%;
     gap: 24px;
   }
-  .desbtnscr {
+  .to-do{
     width: 303px;
-    background-image: url("assets/desktop-view_images/Img Placeholder1.svg");
     height: 435px;
-    display: flex;
-    justify-content: end;
-    align-items: flex-end;
   }
+  
   button {
     height: 58px;
+  }
+  .item1{
+    cursor: pointer;
+  }
+  .item1:hover{
+    color: #FF6B00;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .item2:hover{
+cursor: pointer;
+color: #FF6B00;
+font-size: 18px;
+  }
+  .item3:hover{
+cursor: pointer;
+color: #FF6B00;font-size: 18px;
   }
   .ddh {
     display: flex;
@@ -799,10 +919,10 @@ textarea:focus{
     width: 100%;
     gap: 24px;
   }
-  .abtdes{
+  .abtdes {
     font-size: 20px;
   }
-  .lng{
+  .lng {
     font-size: 22px;
   }
   .skills {
@@ -894,16 +1014,25 @@ textarea:focus{
       justify-content: space-between;
       padding-top: 130px;
     }
+    #overlay {
+      display: none;
+    }
   }
   @media screen and (min-width: 687px) {
     body {
       width: 100%;
+    }
+    .content{
+      width: 35.375rem;
     }
     .desktopfirstwork {
       width: 50%;
     }
     .sidedes {
       width: 100%;
+    }
+    #overlay {
+      display: none;
     }
     .sidedes {
       width: 50%;
@@ -914,19 +1043,84 @@ textarea:focus{
     #ab {
       width: 337px;
     }
+    .des-form{
+      padding: 30px 30px 30px 50px;
+    }
+    .des-formAbt{
+      font-size: 30px;
+    }
   }
   @media screen and (max-width: 1030px) {
     .rec {
       display: flex;
       flex-direction: column;
     }
-    .sidedes{
+    .sidedes {
       width: 100%;
       padding: 0px 84px;
     }
-    .rec{
+    .rec {
       align-items: center;
     }
-
   }
+}
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-12 11:29:56
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation color-change-2x
+ * ----------------------------------------
+ */
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #142527;
+  }
+  100% {
+    background: #1f1b22;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #080808;
+  }
+  100% {
+    background: #712626;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-12 11:51:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-pop-up-top
+ /* * ---------------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #752706;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8B4513;
 }
