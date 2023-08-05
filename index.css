@@ -145,8 +145,8 @@ line-height: 2.75em;
   align-items: flex-start;
   /* height: 100vh; */
   padding: 120px 24px;
-   /* background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom right
-    no-repeat;  */
+   background: #1c1a19 url("assets/illustration-header-mobile.svg") bottom right
+    no-repeat; 
   gap: 12px;
 }
 .intro {
